@@ -1,0 +1,48 @@
+.form {
+  border: 0;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 2rem;
+}
+.input-container label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.input {
+  font-size: 1.5rem;
+}
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1.3rem;
+  text-align: center;
+  background-color: blueviolet;
+  border: 0;
+  color: #fff;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.userList {
+  background-color: #fff;
+  margin-top: 2rem;
+  border: 0;
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
