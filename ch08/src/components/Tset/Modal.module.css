@@ -1,4 +1,51 @@
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.306);
+  background-color: rgba(0, 0, 0, 0.63);
   height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  border: 0;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 30rem;
+  z-index: 11;
+  position: absolute;
+  top: 40%;
+  left: 34%;
+}
+
+.header {
+  background-color: rgb(155, 93, 214);
+  margin-bottom: 1.4rem;
+  color: #fff;
+  padding: 1rem;
+  font-size: .8rem;
+}
+
+.content {
+  margin-bottom: 1.3rem;
+  padding-left: .6rem;
+  font-weight: bold;
+  color: red;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+}
+.actions button {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  text-align: center;
+  background-color: blueviolet;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
 }

@@ -3,6 +3,7 @@
   background-color: #fff;
   padding: 1rem;
   border-radius: 20px;
+  position: relative;
 }
 
 .input-container {
@@ -33,6 +34,10 @@
   color: #fff;
   margin-left: 2rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(161, 90, 228);
 }
 
 .userList {
