@@ -1,0 +1,42 @@
+.cart {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.btn1 {
+  background-color: rgb(56, 26, 26);
+  border: 0;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem;
+  margin: .5rem;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid black;
+}
+.btn2 {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  color: black;
+  padding: 1rem;
+  margin: .5rem;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: rgb(56, 26, 26);
+  color: #fff;
+}

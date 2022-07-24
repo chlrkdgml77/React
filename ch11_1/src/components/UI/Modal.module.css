@@ -1,0 +1,25 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.382);
+  height: 150vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: #fff;
+  width: 20vw;
+  z-index: 2;
+  position: fixed;
+  top: 30rem;
+  border: 0;
+  border-radius: 20px;
+}
