@@ -1,7 +1,7 @@
 import {createStore} from "redux"
 import {createSlice, configureStore} from "@reduxjs/toolkit"
 
-const initState = {counter: 0, showCounter: true}
+const initState = {counter: 1, showCounter: true}
 
 const counterSlice = createSlice({
   name: "counter",
