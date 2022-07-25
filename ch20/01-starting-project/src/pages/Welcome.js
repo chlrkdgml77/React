@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { Route } from 'react-router-dom'
 
 const Welcome = () => {
   return (
-    <div>Welcome</div>
+    <Fragment>
+      <h1>Welcome</h1>
+      <Route path="/welcome/user">
+        <p>welcome messi</p>
+      </Route>
+    </Fragment>
   )
 }
 
