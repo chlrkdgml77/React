@@ -1,26 +1,35 @@
-import { cartAction } from '../../store';
-import { useSelector } from 'react-redux';
+import { cartAction } from "../../store";
+import { useSelector } from "react-redux";
 
-import Card from '../UI/Card';
-import classes from './Cart.module.css';
-import CartItem from './CartItem';
+import Card from "../UI/Card";
+import classes from "./Cart.module.css";
+import CartItem from "./CartItem";
 
 const Cart = (props) => {
+  
+  const amount = useSelector((state) => {
+    return state.cart.amount;
+  });
+  const price = useSelector((state) => {
+    return state.cart.amount * 10;
+  });
 
-  const amount = useSelector((state) => {return state.cart.amount})
-  const price = useSelector((state) => {return state.cart.amount * 6})
+  const show = useSelector((state) => {
+    return state.cart.showShop;
+  });
 
-  const show = useSelector((state) => {return state.cart.showShop});
+  const cartItems = useSelector((state) => {
+    return state.cart.items;
+  });
 
   return (
     <Card className={classes.cart}>
       <h2>Your Shopping Cart</h2>
       <ul>
-        {show && <CartItem
-          item={
-            { title: 'Test Item', quantity: amount, total: price, price: 6 }
-          }
-        />}
+        {show &&
+          cartItems.map((item) => (
+            <CartItem item={{ title: item.name, quantity: item.amount, total: price, price: item.price }} />
+          ))}
       </ul>
     </Card>
   );
